@@ -1,4 +1,4 @@
-# notification
+# notification [![Build Status](https://travis-ci.org/michaelliao/openweixin.svg?branch=master)](https://travis-ci.org/michaelliao/openweixin)
 
 > [Element](https://github.com/ElemeFE/element) Notification clone, and did just a little change. If you have a better idea of this component improvement, please share it and I will update it immediately.
 

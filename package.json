@@ -1,7 +1,7 @@
 {
-  "name": "template",
-  "description": "A vue.js component dev project",
-  "version": "1.0.0",
+  "name": "vue-element-multiple-notification",
+  "description": "Element Notification clone, and did just a little change.",
+  "version": "1.0.1",
   "author": "vue-element-multiple",
   "main": "lib/notification.js",
   "files": [
