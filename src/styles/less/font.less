@@ -1,0 +1,157 @@
+/*
+@notification-icon-prefix-cls: ~'@{vm-prefix}notification-icon';
+
+@font-face {font-family: "vm-notification-font";
+  src: url('@{icon-font-path}/iconfont.eot'); !* IE9*!
+  src: url('@{icon-font-path}/iconfont.eot#iefix') format('embedded-opentype'), !* IE6-IE8 *!
+  url('@{icon-font-path}/iconfont.woff') format('woff'), !* chrome, firefox *!
+  url('@{icon-font-path}/iconfont.ttf') format('truetype'), !* chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+  url('@{icon-font-path}/iconfont.svg#vm-notification-font') format('svg'); !* iOS 4.1- *!
+}
+
+[class*="@{notification-icon-prefix-cls}"] [class^="@{notification-icon-prefix-cls}"] {
+  font-family:"vm-notification-font" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.@{notification-icon-prefix-cls} {
+	&--info{
+	  color: @notification-info-color;
+	  &:before {
+		content: "\e703";
+	  }
+	}
+}
+.@{notification-icon-prefix-cls} {
+  &--success{
+	color: @notification-success-color;
+	&:before {
+	  content: "\e701";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--warning{
+	color: @notification-warning-color;
+	&:before {
+	  content: "\e702";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--error{
+	color: @notification-error-color;
+	&:before {
+	  content: "\e704";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--loading{
+	color: #bfcbd9;
+	animation: rotating 1s linear infinite;
+	&:before {
+	  content: "\e705";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--close{
+	&:before {
+	  content: "\e700";
+	}
+  }
+}
+
+@keyframes rotating {
+  0% {
+	transform: rotateZ(0deg);
+  }
+
+  100% {
+	transform: rotateZ(360deg);
+  }
+}*/
+
+@notification-icon-prefix-cls: ~'@{vm-prefix}notification-icon';
+
+@font-face {font-family: "vm-message-font";
+  src: url('@{icon-font-path}/iconfont.eot'); /* IE9*/
+  src: url('@{icon-font-path}/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('@{icon-font-path}/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('@{icon-font-path}/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('@{icon-font-path}/iconfont.svg#vm-message-font') format('svg'); /* iOS 4.1- */
+}
+
+[class*="@{notification-icon-prefix-cls}"],[class^="@{notification-icon-prefix-cls}"] {
+  font-family:"vm-message-font" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.@{notification-icon-prefix-cls} {
+  &--info{
+	color: @notification-info-color;
+	&:before{
+	  content: "\e803";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--success{
+	color: @notification-success-color;
+	&:before{
+	  content: "\e801";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--error{
+	color: @notification-error-color;
+	&:before{
+	  content: "\e804";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--warning{
+	color: @notification-warning-color;
+	&:before{
+	  content: "\e802";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--close{
+	color: @notification-close-color;
+	&:before{
+	  content: "\e800";
+	}
+  }
+}
+.@{notification-icon-prefix-cls} {
+  &--loading{
+	color: #bfcbd9;
+	animation: rotating 1s linear infinite;
+	&:before{
+	  content: "\e805";
+	}
+  }
+}
+
+@keyframes rotating {
+  0% {
+	transform: rotateZ(0deg);
+  }
+
+  100% {
+	transform: rotateZ(360deg);
+  }
+}
